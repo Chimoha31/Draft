@@ -21,8 +21,9 @@ justify-content: space-around;
 const A = styled.a`
   border-top: 1px solid rgba(255, 255, 255, 0.4);
   border-left: 1px solid rgba(255, 255, 255, 0.4);
-  border-radius: 8px;
+  border-radius: 15px;
   box-shadow: 10px 8px 20px rgba(0, 0, 0, 0.5);
+  font-size: 24px;
   color: black;
   text-align: center;
   text-decoration: none;
