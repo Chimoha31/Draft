@@ -34,6 +34,26 @@ const FooterDiv = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+
+  &::before {
+    content: "";
+    position: absolute;
+    right: 0%;
+    width: 50%;
+    height: 80%;
+    background: rgb(243, 231, 125);
+    clip-path: circle(18.5% at 70% 40%);
+  }
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -20%;
+    width: 70%;
+    height: 80%;
+    background: rgb(212, 109, 99);
+    clip-path: circle(35.7% at 28% 71%);
+  }
 `;
 const ContactDiv = styled.div`
   height: 100%;

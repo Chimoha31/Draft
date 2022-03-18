@@ -45,7 +45,7 @@ const Cursor = styled.div`
     width: 10px;
     height: 10px;
     margin: -10px 0 0 -10px;
-    z-index: 200;
+    z-index: 100;
     pointer-events: none;
     opacity: 0;
   }
@@ -57,7 +57,7 @@ const Cursor = styled.div`
     height: 30px;
     border-radius: 30px;
     margin: -20px 0 0 -20px;
-    z-index: 150;
+    z-index: 90;
     pointer-events: none;
     opacity: 0;
   }
