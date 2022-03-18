@@ -27,7 +27,7 @@ const A = styled.a`
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  width: 100%;
+  width: 70%;
   margin: 0 auto;
   padding: 10px 0;
   transition: all 0.5s ease;
