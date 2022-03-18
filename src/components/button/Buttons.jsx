@@ -1,8 +1,7 @@
-import React,{useState} from 'react';
+import React from 'react';
 import Button from './Button';
 
 function Buttons() {
-  const [title] = useState("");
 
   return (
     <div>
