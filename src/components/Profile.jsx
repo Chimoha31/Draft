@@ -8,7 +8,7 @@ function Profile() {
       <Div>
         <h1>Hi, I'm Chiho </h1>
         <h3>A Front-End Developer based in Vancouver</h3>
-      <Image src={chiho} alt="chiho" />
+        <Image src={chiho} alt="chiho" />
       </Div>
     </Flex>
   );
@@ -28,6 +28,7 @@ const Flex = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+  text-align: center;
 
   & h1 {
     font-family: "Arizonia", cursive;
@@ -39,6 +40,11 @@ const Flex = styled.div`
     font-weight: lighter;
   }
 `;
-const Div = styled.div``;
+const Div = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+`;
 
 export default Profile;
