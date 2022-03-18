@@ -7,7 +7,7 @@ import Title from "react-vanilla-tilt";
 function Card() {
   return (
     <BigContainer>
-        <Title style={{ width: "65%"}}>
+        <Title style={{ width: "65%", borderRadius:"15px", padding: "20px"}}>
           <Profile />
           <Buttons />
         </Title>

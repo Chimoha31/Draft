@@ -36,6 +36,14 @@ const A = styled.a`
     box-shadow: none;
     transform: translateY(-2px);
   }
+  @media (min-width: 767px) {
+    width: 50%;
+    height: 30px;
+  }
+  @media (min-width: 1025px) {
+    width: 35%;
+    height: 30px;
+  }
 `;
 
 

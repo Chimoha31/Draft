@@ -43,6 +43,22 @@ const ContactDiv = styled.div`
   align-items: center;
   z-index: 3;
   margin: 50px;
+  & h2 {
+    font-size: 72px;
+    font-family: "Arizonia", cursive;
+    margin-bottom: 10px;
+  }
+  & p {
+    font-size: 24px;
+    text-align: center;
+  }
+  & a {
+    color: black;
+  }
+  & i {
+    font-size: 40px;
+    margin-right: 10px;
+  }
 `;
 
 export default Footer;

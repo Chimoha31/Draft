@@ -46,7 +46,7 @@ const Flex = styled.div`
       sans-serif;
     font-weight: lighter;
     margin: 0;
-    margin-bottom: 10px;
+    margin-bottom: 30px;
   }
   @media (min-width: 1025px) {
     h1 {

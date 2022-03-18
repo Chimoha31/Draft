@@ -9,16 +9,16 @@ import Footer from "./Footer";
 
 function Home() {
   return (
-    <Cubic>
+    <Container>
       <H3>Thank you for visiting my Portfolio page</H3>
       <Card />
       <Contact />
       <Footer />
-    </Cubic>
+    </Container>
   );
 }
 
-const Cubic = styled.div`
+const Container = styled.div`
 width: 100%;
 height: 100%;
 `
