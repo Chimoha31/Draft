@@ -5,7 +5,7 @@ function Buttons() {
 
   return (
     <div>
-    <Button title="About Me"/>
+    <Button title="About Me" link="Timelines.jsx"/>
     <Button title="Works" />
     <Button title="Skills & Resume"/>
 

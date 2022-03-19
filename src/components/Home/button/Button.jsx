@@ -1,10 +1,10 @@
 import React from "react";
 import styled from "styled-components";
 
-function Button({title}) {
+function Button({title, link}) {
   return (
     <Container>
-      <A href="#">{title}</A>
+      <A href={link}>{title}</A>
     </Container>
   );
 }
