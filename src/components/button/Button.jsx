@@ -10,12 +10,9 @@ function Button({title}) {
 }
 
 const Container = styled.div`
-height: 100%;
 position: relative;
-padding: 30px;
 display: flex;
-flex-direction: column;
-justify-content: space-around;
+margin: 30px 0;
 `
 
 const A = styled.a`

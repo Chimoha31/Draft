@@ -34,25 +34,41 @@ const FooterDiv = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+  z-index: -10;
 
   &::before {
     content: "";
     position: absolute;
+    z-index: -20;
     right: 0%;
+    bottom: 10%;
     width: 50%;
-    height: 80%;
+    height: 35%;
     background: rgb(243, 231, 125);
     clip-path: circle(18.5% at 70% 40%);
+    @media (min-width: 767px) {
+      clip-path: circle(24.5% at 70% 40%);
+    }
+    @media (min-width: 1025px) {
+      clip-path: circle(24.5% at 70% 40%);
+    }
   }
   &::after {
     content: "";
     position: absolute;
+    z-index: -20;
     left: 0;
-    bottom: -20%;
+    bottom: 10px;
     width: 70%;
-    height: 80%;
+    height: 40%;
     background: rgb(212, 109, 99);
-    clip-path: circle(35.7% at 28% 71%);
+    clip-path: circle(45.7% at 28% 71%);
+    @media (min-width: 767px) {
+      clip-path: circle(20.7% at 28% 71%);
+    }
+    @media (min-width: 1025px) {
+      clip-path: circle(27.7% at 30% 71%);
+    }
   }
 `;
 const ContactDiv = styled.div`
@@ -62,7 +78,7 @@ const ContactDiv = styled.div`
   justify-content: space-around;
   align-items: center;
   z-index: 3;
-  margin: 50px;
+  margin-top: 40px;
   & h2 {
     font-size: 72px;
     font-family: "Arizonia", cursive;

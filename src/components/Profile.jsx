@@ -5,11 +5,11 @@ import styled from "styled-components";
 function Profile() {
   return (
     <Flex>
-      <Div>
+      {/* <Div> */}
         <h1>Hi, I'm Chiho </h1>
         <h3>A Front-End Developer based in Vancouver</h3>
         <Image src={chiho} alt="chiho" />
-      </Div>
+      {/* </Div> */}
     </Flex>
   );
 }
@@ -30,16 +30,11 @@ const Image = styled.img`
 `;
 
 const Flex = styled.div`
-  height: 100%;
   position: relative;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
   text-align: center;
   & h1 {
     font-family: "Arizonia", cursive;
     font-size: 40px;
-    margin: 30px 0;
   }
   & h3 {
     font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
@@ -56,12 +51,6 @@ const Flex = styled.div`
       font-size: 24px;
     }
   }
-`;
-const Div = styled.div`
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
 `;
 
 export default Profile;
