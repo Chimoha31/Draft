@@ -13,6 +13,7 @@ function App() {
       <Routes>
       <Route path="/" element={<Home />} exact />
       <Route path="/timeline" element={<Timelines />} />
+      {/* <Route path="/works" element={<Works />} /> */}
       </Routes>
     </Router>
   );
