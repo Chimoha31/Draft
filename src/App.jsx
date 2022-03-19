@@ -1,13 +1,20 @@
-import './App.css';
-import Home from './components/Home/Home';
-import Pointer from './components/Home/parts/Pointer';
+import "./App.css";
+import Home from "./components/Home/Home";
+import Timelines from "./components/Timeline/Timelines";
+import {
+  BrowserRouter as Router,
+  Route,
+  Routes,
+} from "react-router-dom";
 
 function App() {
   return (
-    <div className="home_container">
-      <Pointer />
-      <Home />
-    </div>
+    <Router>
+      <Routes>
+      <Route path="/" element={<Home />} exact />
+      <Route path="/timeline" element={<Timelines />} />
+      </Routes>
+    </Router>
   );
 }
 

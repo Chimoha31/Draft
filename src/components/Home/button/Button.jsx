@@ -1,31 +1,33 @@
 import React from "react";
 import styled from "styled-components";
 
-function Button({title, link}) {
+function Button({ title }) {
   return (
     <Container>
-      <A href={link}>{title}</A>
+      <ButtonLink>{title}</ButtonLink>
     </Container>
   );
 }
 
 const Container = styled.div`
-position: relative;
-display: flex;
-margin: 30px 0;
-`
+  position: relative;
+  display: flex;
+  margin: 30px 0;
+`;
 
-const A = styled.a`
+const ButtonLink = styled.button`
+  border: none;
   border-top: 1px solid rgba(255, 255, 255, 0.4);
   border-left: 1px solid rgba(255, 255, 255, 0.4);
+  background-color: rgba(255, 255, 255, 0.3);
   border-radius: 15px;
-  box-shadow: 10px 8px 20px rgba(0, 0, 0, 0.5);
+  box-shadow: 5px 8px 10px rgba(0, 0, 0, 0.5);
   font-size: 24px;
   color: black;
   text-align: center;
-  text-decoration: none;
   display: inline-block;
   width: 70%;
+  height: 50px;
   margin: 0 auto;
   padding: 10px 0;
   transition: all 0.5s ease;
@@ -36,13 +38,10 @@ const A = styled.a`
   }
   @media (min-width: 767px) {
     width: 50%;
-    height: 30px;
   }
   @media (min-width: 1025px) {
     width: 35%;
-    height: 30px;
   }
 `;
-
 
 export default Button;

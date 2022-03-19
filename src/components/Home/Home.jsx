@@ -3,10 +3,12 @@ import Card from "./Card";
 import Footer from "./Footer";
 import Title from "./Title";
 import styled from "styled-components";
+import Pointer from "./parts/Pointer";
 
 function Home() {
   return (
     <>
+      <Pointer />
       <Title /> {/*タイトル(animation)*/}
       <Container>
         <H3>Thank you for visiting my Portfolio page</H3>
@@ -18,6 +20,7 @@ function Home() {
 }
 
 const Container = styled.div`
+  cursor: none;
   width: 100h;
   height: 100%;
   backdrop-filter: blur(30px);
