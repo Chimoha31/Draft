@@ -62,12 +62,12 @@ const FooterDiv = styled.div`
     width: 70%;
     height: 40%;
     background: rgb(212, 109, 99);
-    clip-path: circle(45.7% at 28% 71%);
+    clip-path: circle(43.7% at 28% 71%);
     @media (min-width: 767px) {
       clip-path: circle(20.7% at 28% 71%);
     }
     @media (min-width: 1025px) {
-      clip-path: circle(27.7% at 30% 71%);
+      clip-path: circle(27.7% at 50% 71%);
     }
   }
 `;

@@ -1,6 +1,6 @@
 import React from "react";
 import Buttons from "./button/Buttons";
-import Profile from "./Profile";
+import Profile from './Profile';
 import styled from "styled-components";
 import Title from "react-vanilla-tilt";
 

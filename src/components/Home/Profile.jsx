@@ -1,15 +1,13 @@
 import React from "react";
-import chiho from "../images/chiho.JPG";
+import chiho from "../../images/chiho.JPG";
 import styled from "styled-components";
 
 function Profile() {
   return (
     <Flex>
-      {/* <Div> */}
         <h1>Hi, I'm Chiho </h1>
         <h3>A Front-End Developer based in Vancouver</h3>
         <Image src={chiho} alt="chiho" />
-      {/* </Div> */}
     </Flex>
   );
 }

@@ -1,26 +1,25 @@
 import React from "react";
 import Card from "./Card";
-import Contact from "./Contact";
-
-import "./Home.css";
-import styled from "styled-components";
 import Footer from "./Footer";
+import Title from "./Title";
+import styled from "styled-components";
 
 function Home() {
   return (
-    <Container>
-      <H3>Thank you for visiting my Portfolio page</H3>
-      <Card />
-      <Contact />
-      <Footer />
-    </Container>
+    <>
+      <Title /> {/*タイトル(animation)*/}
+      <Container>
+        <H3>Thank you for visiting my Portfolio page</H3>
+        <Card /> {/*Name card*/}
+        <Footer /> {/*Footer*/}
+      </Container>
+    </>
   );
 }
 
 const Container = styled.div`
   width: 100h;
   height: 100%;
-  // z-index: 900;
   backdrop-filter: blur(30px);
   &::before {
     content: "";
@@ -35,7 +34,7 @@ const Container = styled.div`
       clip-path: circle(35.6% at 100% 0);
     }
     @media (min-width: 1025px) {
-      clip-path: circle(40.6% at 100% 0);
+      clip-path: circle(45.6% at 100% 0);
     }
   }
   &::after {
@@ -52,7 +51,7 @@ const Container = styled.div`
       clip-path: circle(25.3% at 20% 40%);
     }
     @media (min-width: 1025px) {
-      clip-path: circle(23.3% at 20% 40%);
+      clip-path: circle(26% at 30% 40%);
     }
   }
 `;
@@ -61,6 +60,7 @@ const H3 = styled.div`
   font-family: "Arizonia", cursive;
   width: 100%;
   font-size: 25px;
+  font-weight: 500;
   text-align: center;
   padding: 30px 0;
   @media (min-width: 767px) {

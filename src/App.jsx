@@ -1,6 +1,6 @@
 import './App.css';
-import Home from './components/Home';
-import Pointer from './components/Pointer';
+import Home from './components/Home/Home';
+import Pointer from './components/Home/parts/Pointer';
 
 function App() {
   return (
