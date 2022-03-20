@@ -21,7 +21,7 @@ let timelineElements = [
     location: "Vancouver, BC",
     description: "Web application Diploma. gfdulsacnfiasbvui;abvia;njfai;",
     date: "August 2021 - present",
-    icon: "study"
+    icon: "work"
   },
   {
     id: 4,
