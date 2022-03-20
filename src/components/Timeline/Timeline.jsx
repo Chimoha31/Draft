@@ -7,19 +7,21 @@ import {
 import "react-vertical-timeline-component/style.min.css";
 import WorkIcon from "@mui/icons-material/Work";
 import SchoolIcon from "@mui/icons-material/School";
+import styled from "styled-components";
+import './Timeline.css';
 
 function Timeline() {
-  let workIconStyles = {background: "pink"}
-  let schoolIconStyles = {background: "yellow"}
+  let workIconStyles = { background: "pink" };
+  let schoolIconStyles = { background: "yellow" };
   return (
-    <div>
-      <h1>About Me</h1>
-      <p>
+    <Div>
+      <Title>About Me</Title>
+      <P>
         Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consectetur
         corporis quas, optio earum adipisci eius, voluptatibus doloribus
         eligendi dolor accusantium beatae at? Velit reprehenderit voluptate
         asperiores obcaecati dolor ducimus veritatis.
-      </p>
+      </P>
       <VerticalTimeline>
         {timelineElements.map((element) => {
           let isWorkIcon = element.icon === "work";
@@ -37,13 +39,33 @@ function Timeline() {
               <h5 className="vertical-timeline-element-subtitle">
                 {element.location}
               </h5>
-              <p>{element.description}</p>
+              <Description>{element.description}</Description>
             </VerticalTimelineElement>
           );
         })}
       </VerticalTimeline>
-    </div>
+    </Div>
   );
 }
 
+const Div = styled.div`
+  background: yellowgreen;
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  color: black;
+`;
+
+const Title = styled.h1`
+  font-size: 5rem;
+  text-align: center;
+`;
+const P = styled.p`
+  font-size: 20px;
+  width: 70%;
+  margin: 5rem auto;
+`;
+
+const Description = styled.p`
+  padding: 1.5rem 0 2rem 0;
+`
 export default Timeline;
