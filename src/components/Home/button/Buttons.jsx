@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 function Buttons() {
   return (
     <div>
-      <Link to="/timeline" style={{textDecoration:"none"}}>
+      <Link to="/aboutme" style={{textDecoration:"none"}}>
         <Button title="About Me" />
       </Link>
       <Link to="" style={{textDecoration:"none"}}>

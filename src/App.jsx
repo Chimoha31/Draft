@@ -1,6 +1,6 @@
 import "./App.css";
 import Home from "./components/Home/Home";
-import Timelines from "./components/Timeline/Timelines";
+import AboutMe from "./components/AboutMe/AboutMe";
 import {
   BrowserRouter as Router,
   Route,
@@ -12,7 +12,7 @@ function App() {
     <Router>
       <Routes>
       <Route path="/" element={<Home />} exact />
-      <Route path="/timeline" element={<Timelines />} />
+      <Route path="/aboutme" element={<AboutMe />} />
       {/* <Route path="/works" element={<Works />} /> */}
       </Routes>
     </Router>
