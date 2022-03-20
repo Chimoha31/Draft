@@ -1,0 +1,18 @@
+.menu_open,
+.menu_close {
+  color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -15px;
+  margin-left: -15px;
+  transition: all 0, 7s cubic-bezier(1, -0.07, 0.1, 1.12);
+}
+
+.menu-open {
+  transform-origin: -100px -100px;
+}
+ .menu-close {
+  transform-origin: -100px -100px;
+  transform: rotate(-30deg);
+}
