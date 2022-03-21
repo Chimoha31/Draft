@@ -1,0 +1,80 @@
+.page {
+  background-color: rgb(133, 110, 80);
+}
+.menu-toggle {
+  z-index: 100;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 100px;
+  height: 80px;
+  cursor: pointer;
+  background-color: rgb(156, 223, 111);
+  border-bottom-right-radius: 100%;
+}
+
+.menu-open,
+.menu-close {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -15px;
+  margin-left: -15px;
+  transition: all 0, 7s cubic-bezier(1, -0.07, 0.1, 1.12);
+}
+
+.menu-open {
+  transform-origin: -100px -100px;
+}
+.menu-close {
+  transform-origin: -100px -100px;
+  transform: rotate(-30deg);
+}
+
+.menu-items {
+  position: fixed;
+  bottom: 0;
+  left: 20px;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+  height: 60px;
+  margin-bottom: 40px;
+  transform: translateX(-300px);
+  transition: all 0.7s cubic-bezier(1, -0.07, 0.1, 1.12);
+}
+li:nth-child(2) {
+  margin-left: 20px;
+}
+li:nth-child(3) {
+  margin-left: 40px;
+}
+
+.rotate .menu-items li {
+  transform: translateX(0);
+}
+
+.timeline_container {
+  position: relative;
+  background-color: rgb(228, 199, 135);
+  z-index: 1;
+  padding: 2rem;
+  padding-bottom: 100px;
+  margin: 0 auto;
+  transform-origin: top left;
+  transition: all 0.7s cubic-bezier(1, -0.07, 0.1, 1.12);
+}
+
+.rotate .timeline_container {
+  transform: rotate(-18deg);
+}
+.rotate .menu-open {
+  transform: rotate(-30deg);
+}
+.rotate .menu-close {
+  transform: rotate(0);
+}
