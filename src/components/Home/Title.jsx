@@ -46,9 +46,11 @@ p {
   font-family: "Arizonia", cursive;
   @media (min-width: 767px) {
     font-size: 80px;
+    padding-bottom: 50px;
   }
   @media (min-width: 1025px) {
     font-size: 95px;
+    padding-bottom: 100px;
   }
 }
 & p {

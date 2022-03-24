@@ -18,12 +18,12 @@ const Image = styled.img`
   height: 200px;
   box-shadow: 5px 5px 25px black;
   @media (min-width: 767px) {
-    width: 250px;
-    height: 250px;
+    width: 230px;
+    height: 230px;
   }
   @media (min-width: 1025px) {
-    width: 300px;
-    height: 300px;
+    width: 250px;
+    height: 250px;
   }
 `;
 

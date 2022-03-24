@@ -1,5 +1,6 @@
 import React, { useState } from "react";
-import NavBar from './NavBar';
+import Pointer from "../Home/parts/Pointer";
+import NavBar from "./NavBar";
 import Timeline from "./Timeline";
 import HeaderTimeline from "./HeaderTimeline";
 import "./Timeline.css";
@@ -8,13 +9,13 @@ import styled from "styled-components";
 import { VerticalTimeline } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
 
-
 function AboutMe() {
-  const [toggle, setToggle]= useState(false);
+  const [toggle, setToggle] = useState(false);
   return (
     <Div>
+      <Pointer />
       <div className={toggle ? "page rotate" : "page"}>
-       <NavBar toggle={toggle} setToggle={setToggle}/>
+        <NavBar toggle={toggle} setToggle={setToggle} />
         <div className="timeline_container">
           <HeaderTimeline />
           <VerticalTimeline>

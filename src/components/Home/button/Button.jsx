@@ -41,6 +41,7 @@ const ButtonLink = styled.button`
   }
   @media (min-width: 1025px) {
     width: 35%;
+    height: 40px;
   }
 `;
 
